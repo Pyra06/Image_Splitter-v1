@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0F8D4"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSplit"
+        android:layout_width="116dp"
+        android:layout_height="49dp"
+        android:enabled="false"
+        android:text="split >"
+        android:textColor="#D326B8"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/btnPickImg"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="browse"
+        android:textColor="#D326B8"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="#CFFBDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88">
+
+        <TableRow
+            android:layout_width="117dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplitTopLeft"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplitTopRight"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="6dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="117dp"
+            android:layout_height="117dp">
+
+            <ImageView
+                android:id="@+id/myImageViewSplitBottomLeft"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:layout_marginRight="6dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/myImageViewSplitBottomRight"
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:enabled="false"
+        android:text="reset"
+        android:textColor="#D326B8"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:background="#CFFBDF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/myImageView"
+        app:layout_constraintEnd_toEndOf="@+id/myImageView"
+        app:layout_constraintStart_toStartOf="@+id/myImageView"
+        app:layout_constraintTop_toTopOf="@+id/myImageView"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="195dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="IMAGE"
+        android:textColor="#D326B8"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/myImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickImg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:text="X"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSplit"
+        app:layout_constraintEnd_toEndOf="@+id/myImageView"
+        app:layout_constraintStart_toStartOf="@+id/myImageView"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
